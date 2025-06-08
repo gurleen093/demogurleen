@@ -1,0 +1,17 @@
+name: Gurleen Workflow
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Print Hello
+      run: echo "Hello from Gurleen's GitHub Action!"
+
+    - name: List files in the repo
+      run: ls -la
